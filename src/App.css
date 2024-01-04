@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Anton");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,4 +11,70 @@
 }
 body {
    width: 100%;
+}
+.navbar {
+   transition: 0.5s ease-in-out;
+}
+
+#links {
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 66%;
+   text-transform: uppercase;
+   margin-top: 1px;
+   transition: 2s ease-in-out;
+}
+.activelink {
+   text-decoration: underline;
+   transition: 0.3s ease-out;
+}
+.font {
+   font-family: "Josefin Sans", sans-serif;
+}
+.hero {
+   font-family: "Josefin Sans", sans-serif;
+}
+.anim {
+   animation: hero 1s ease-in-out infinite;
+}
+
+@keyframes hero {
+   0% {
+      scale: 0.9;
+   }
+   50% {
+      scale: 1;
+   }
+   100% {
+      scale: 0.9;
+   }
+}
+.bg {
+   background-image: url("./Utils/IMGS/bg.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: cover;
+   object-position: center;
+   background-position: center;
+}
+.imge {
+   object-position: center;
+   z-index: 10;
+   cursor: pointer;
+}
+
+.imge:hover {
+   opacity: 0.7;
+   background-blend-mode: darken;
+   scale: 1.02;
+   transition: 0.2s ease-in-out;
+
+   /* filter: opacity(50%); */
+   /* z-index: 0; */
+}
+
+.product {
+   transition: 2s ease-in-out;
+}
+.atc:hover {
+   background: #000;
 }
